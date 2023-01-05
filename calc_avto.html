@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc_auto.css">
+</head>
+<body>
+    <form id="form">
+        <p class="title">Калькулятор стоимости авто</p>
+        <div class="form__calc">
+            <div class="form__price">
+                <p class="form__div-title">Цена на аукционе </p>
+                <input type="text" id="input-price">
+            </div>
+            <div class="form__auction">
+                <p class="form__div-title">Аукцион </p>
+                <select name="" id="select-auction">
+                    <option value="">Выбрать аукцион</option>
+                    <option value="653000">ARAI BAYSIDE</option>
+                    <option value="647500">ARAI OYAMA</option>
+                    <option value="654500">ARAI SENDAY</option>                    
+                    <option value="169500 ">ARAI OYAMA V/T</option>
+                    <option value="176500">ARAI SENDAY</option>
+                    <option value="151500">BAYAUC</option>
+                    <option value="147500">CAA CHUBU</option>
+                    <option value="147500">CAA GIFU</option>
+                    <option value="182500">CAA TOHOKU</option>
+                    <option value="168000">CAA TOKYO</option>
+                    <option value="195000">HAA KOBE</option>
+                    <option value="149500">HANATEN OSAKA</option>
+                    <option value="160000">HERO</option>
+                    <option value="173500">HONADA HOKKAIDO</option>
+                    <option value="151000">HONADA KANSAI</option>
+                    <option value="173500">HONADA KYUSHU</option>
+                    <option value="145500">HONADA NAGOYA</option>
+                </select>
+            </div>            
+            <div class="form__age">
+                <div><p class="form__div-title">Возраст автомобиля</p></div>
+                <div class="">
+                    <div>
+                        <input id="less_three" type="radio" name="age" value="less_three">
+                        <label for="less_three">Меньше 3 лет</label>
+                    </div>
+                    <div>
+                        <input id="less_five" type="radio" name="age" value="less_five">
+                        <label for="less_five">От 3 до 5 лет</label>
+                    </div>
+                    <div>
+                        <input id="less_seven" type="radio" name="age" value="less_seven">
+                        <label for="less_seven">От 5 до 7 лет</label>
+                    </div>
+                    <div>
+                        <input id="more_seven" type="radio" name="age" value="more_seven">
+                        <label for="more_seven">Больше 7 лет</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__client">
+                <div><p class="form__div-title">Получатель</p></div>
+                <div>
+                    <div>
+                        <input id="individual" type="radio" name="client" value="individual">
+                        <label for="individual">Физическое лицо</label>
+                    </div>
+                    <div>
+                        <input id="entity" type="radio" name="client" value="entity">
+                        <label for="entity">Юридическое лицо</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="btn" onclick="clickMe()" >Рассчитать</button>
+    </form>
+    <div>Стоимость авто: <span id="result">0</span></div>
+    <script src="calc_auto.js"></script>
+</body>
+</html>

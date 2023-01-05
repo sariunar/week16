@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#form{
+    width: 40%;
+    border: 1px solid brown;
+}
+.title{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: brown;
+    color: aliceblue;
+}
+.form__calc{
+    display: grid;
+    gap: 10px;
+}
+.form__price,
+.form__auction,
+.form__service,
+.form__fuel,
+.form__age,
+.form__client{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form__price,
+.form__auction{
+    align-items: center;
+}
+.form__div-title{
+    text-align: end;
+    padding-right: 30px;
+}
+#input-price{
+    width: 90%;
+}
+#select-auction{
+    width: 93%;
+}
+#input-price,
+#select-auction:focus{
+    outline: none;
+}
+#btn{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 20px 40%;
+}
